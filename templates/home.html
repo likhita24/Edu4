@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edu4</title>
+    </head>
+    <body>
+        {% if user.is_authenticated %}
+            <h3>User: {{ user.get_username }}</h3>
+            <a href="{% url 'logout'%}"><h5>Logout</h5></a>
+
+            Welcome to the HOME page !!!!!
+        {% else %}
+        
+            Welcome to the HOME page !!!!!
+
+            <p>Firts time ? <a href="{% url 'register'%}"><h5>Register here</h5></a></p>
+            <p>Already have an account ?<a href="{% url 'login'%}"><h5>Login here</h5></a></p>
+        {% endif %}
+    </body>
+</html>
