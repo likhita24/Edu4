@@ -4,7 +4,9 @@
         <title>Edu4</title>
     </head>
     <body>
+        {% csrf_token %}
         {% if user.is_authenticated %}
+            
             <h3>User: {{ user.get_username }}</h3>
             <a href="{% url 'logout'%}"><h5>Logout</h5></a>
 

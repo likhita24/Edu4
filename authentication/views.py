@@ -5,9 +5,11 @@ from .forms import RegisterForm
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
+# from django.views.decorators.csrf import csrf_protect
 # from django.contrib import messages
 
 # Create your views here.
+
 def registerpage(request):
     if request.user.is_authenticated:
         return redirect('home')
@@ -23,7 +25,6 @@ def registerpage(request):
     context = {'form':form}
     return render(request, 'register.html', context)
 
-
 def loginpage(request):
     if request.user.is_authenticated:
         return redirect('home')
@@ -35,7 +36,9 @@ def loginpage(request):
             user = authenticate(request, username = uname, password = pwd)
             if user is not None:
                 login(request, user)
-                context = {'user': user}
+                # context['user'] = user
+                # return redirect(reverse('main:home', kwargs={'user': user}))
+                context = {'user':user}
                 return render(request, 'home.html', context)
             # else:
 			# 	messages.info(request, 'Username OR password is incorrect') 
