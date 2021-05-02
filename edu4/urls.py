@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from main.views import home
+from main.views import home, appl_info, success_appln
+from django.conf import settings
+from django.conf.urls.static import static
 from authentication.views import registerpage, loginpage, logoutUser
 
 urlpatterns = [
@@ -24,4 +26,9 @@ urlpatterns = [
     path('register/', registerpage, name = 'register'),
     path('login/', loginpage, name = 'login'),
     path('logout/', logoutUser, name = 'logout'),
+    path('application/', appl_info, name='appln_info'),
+    path('successfull/', success_appln, name='success_appln')
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

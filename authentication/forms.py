@@ -1,7 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import UserProfile
 
 
 class RegisterForm(UserCreationForm):
@@ -13,15 +12,7 @@ class RegisterForm(UserCreationForm):
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2', 'first_name', 'last_name']
-    
-    def clean_first_name(self):
-        _dict = super(RegisterForm, self).clean()
-        return _dict['first_name'].capitalize()
-
-    def clean_last_name(self):
-        _dict = super(RegisterForm, self).clean()
-        return _dict['last_name'].capitalize()
+        fields = ['username', 'email', 'password1', 'password2']
     
     def clean_phone(self):
         _dict = super(CreateUserProfileForm, self).clean()
@@ -39,7 +30,5 @@ class RegisterForm(UserCreationForm):
         super(RegisterForm, self).__init__(*args, **kwargs)
         self.fields['email'].widget.attrs['icon_name'] = "fa fa-envelope"
         self.fields['username'].widget.attrs['icon_name'] = "fa fa-id-card"
-        self.fields['first_name'].widget.attrs['icon_name'] = "fa fa-user"
-        self.fields['last_name'].widget.attrs['icon_name'] = "fa fa-user"
         self.fields['password1'].widget.attrs['icon_name'] = "fa fa-lock"
         self.fields['password2'].widget.attrs['icon_name'] = "fa fa-lock"
