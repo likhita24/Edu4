@@ -1,0 +1,375 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+.tips h1 {
+  text-align: center;
+}
+
+
+
+.float-layout h1 {
+  text-align: center;
+}
+
+
+.emergency_nums h1 {
+  text-align: center;
+}
+
+.searchform {
+  background-color: white;
+  padding: 34px;
+}
+
+.dropdown {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  margin: auto;
+  padding: 1px;
+}
+
+input {
+  font-size: 1.2em;
+  padding: 8px;
+  margin: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: center;
+}
+
+.searchform h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.options {
+  padding: 8px;
+}
+
+.options:hover {
+  cursor: pointer;
+  background-color: #2aabe0;
+  color: white;
+}
+
+
+
+
+.tips
+{
+  padding: 40px;
+}
+
+ul{
+  list-style: none;
+  line-height: 1.8rem;
+  
+}
+
+.nested
+{
+  list-style: disc;
+  margin-left: 50px;
+}
+
+/* News section*/
+
+  
+.roles{
+  padding-top: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#353839;
+}
+
+.roles h1{
+    text-align: center;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 16px 10px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
+  padding: 16px;
+  text-align: center;
+  
+  
+}
+
+.card:hover{
+ 
+  box-shadow: 0 4px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.button {
+ /* Green */
+  border: none;
+  border-radius: 7px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 14px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+
+.button2 {
+  
+  color: black; 
+  border: 2px solid #e0ac1c;
+}
+
+.button2:hover {
+  background-color: #e0ac1c;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.float-layout {
+  padding: 20px 120px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 20px;
+ 
+}
+
+.newscard-container {
+  overflow: hidden;
+}
+
+.newscard {
+  background-color: gray;
+  color: white;
+
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 70%;
+  float: right;
+ 
+  border-bottom-right-radius: 20px;
+ 
+}
+
+.newscard-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.newscard-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/*add this it*/
+.newscard-image {
+  display: flex;
+  margin: 10px;
+}
+/*-------------*/
+
+div.newscard-image img {
+  width: 30%;
+  height: auto;
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.newscard-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /*add this it*/
+  .newscard-image {
+     flex-direction: column;
+  }
+  /*----------------------*/
+
+  .newscard {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
+
+.news_btn
+{
+  
+  width: 90px;
+  margin: 20px 20px;
+  padding: 3px;
+  border-radius: 1px;
+}
+
+
+
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse;
+  margin-top: 20px; 
+ 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: center; 
+}
+
+
+
+
+@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr {
+			display: block;
+		}
+
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+    tr {
+      margin: 0 0 1rem 0;
+    }
+      
+    tr:nth-child(odd) {
+      background: #ccc;
+    }
+    
+		td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		td:before {
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 0;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+		/*
+		Label the data
+    You could also use a data-* attribute and content for this. That way "bloats" the HTML, this way means you need to keep HTML and CSS in sync. Lea Verou has a clever way to handle with text-shadow.
+		*/
+		td:nth-of-type(1):before { content: "State"; }
+		td:nth-of-type(2):before { content: "Phone no."; }
+	
+  }
+  
+  .emergency_nums
+  {
+    padding: 20px;
+  }

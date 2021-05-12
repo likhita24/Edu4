@@ -1,0 +1,242 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h2{
+  text-align: center;
+}
+
+.searchform
+{
+    background-color: white;
+    padding: 34px;
+}
+
+
+.dropdown {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    padding: 1px;
+    
+  }
+
+
+  input{
+      font-size: 1.2em;
+      padding: 8px;
+      margin: 2px;
+  }
+  
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   
+    z-index: 1;
+    margin-left: 20px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    text-align: center;
+  }
+
+.searchform h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .dropdown {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .options
+  {
+      padding: 8px;
+  }
+
+  .options:hover
+  {
+        cursor: pointer;
+        background-color:#2aabe0  ;
+        color: white;
+  }
+
+  .roles{
+    padding-top: 20px;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #353839;
+  }
+
+  .roles h1{
+      text-align: center;
+  }
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 16px 10px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    border-top: 4px solid #e0ac1c;;
+   
+    padding: 16px;
+    text-align: center;
+    
+    
+    border-image: linear-gradient(to right, #2aabe0 0%,#e0ac1c 100%) 1;
+  }
+  
+  .card:hover{
+   
+    
+  }
+  
+
+  .button {
+   /* Green */
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+  
+.button2 {
+    
+    color: black; 
+    border: 2px solid #e0ac1c;
+  }
+  
+  .button2:hover {
+    background-color: #e0ac1c;
+    color: white;
+  }
+  
+  
+  
+  
+
+  .float-layout {
+    padding: 5px 120px;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+   
+  }
+  
+  .newscard-container {
+    overflow: hidden;
+  }
+  
+  .newscard {
+    background-color: gray;
+    color: white;
+  
+    min-height: 100%; /*replace this it in width: 100%*/
+    width: 70%;
+    float: right;
+    border-bottom-right-radius: 20px;
+   
+  }
+  
+  .newscard-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  
+  .newscard-desc {
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+  }
+  
+  /*add this it*/
+  .newscard-image {
+    display: flex;
+    margin: 6px;
+  }
+  /*-------------*/
+  
+  div.newscard-image img {
+    width: 30%;
+    height: auto;
+  }
+  
+  /* Phone Devices Query */
+  @media only screen and (max-width: 37.5em) {
+    div.newscard-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /*add this it*/
+    .newscard-image {
+       flex-direction: column;
+    }
+    /*----------------------*/
+  
+    .newscard {
+      width: 100%;
+      margin-top: -4px;
+    }
+  }
+
+  .news_btn
+  {
+    
+    width: 90px;
+    margin: 20px 20px;
+    padding: 3px;
+    border-radius: 1px;
+  }

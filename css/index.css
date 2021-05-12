@@ -1,0 +1,245 @@
+html {
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  margin: 0;
+  color: #353839;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 0 25px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 0 25px;
+}
+
+.content {
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.glrow {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.glcolumn {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.glcolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .glcolumn {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .glcolumn {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 16px 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card edu::before{
+background-image: url('images/ed.jpg');
+opacity: 0.2;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+.services {
+  padding: 5px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .column1
+  {
+    width:100%;
+  }
+  .column2
+  {
+    width:100%;
+  }
+  .services
+  {
+    padding:0px;
+  }
+  .about
+  {
+    overflow: hidden;
+  }
+  div.float-layout {
+   width:100%;
+   padding:10px;
+  }
+}
+
+.float-layout {
+  padding: 5px 120px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 7px;
+}
+
+.newscard-container {
+  overflow: hidden;
+}
+
+.newscard {
+  background-color: gray;
+  color: white;
+
+  min-height: 100%; /*replace this it in width: 100%*/
+  width: 70%;
+  border-bottom-right-radius: 20px;
+  float: right;
+}
+
+.newscard-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.newscard-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/*add this it*/
+.newscard-image {
+  display: flex;
+  margin: 6px;
+}
+/*-------------*/
+
+div.newscard-image img {
+  width: 30%;
+  height: auto;
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.newscard-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*add this it*/
+  .newscard-image {
+    flex-direction: column;
+  }
+  /*----------------------*/
+
+  .newscard {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
+
+.news_btn {
+  width: 90px;
+  margin: 20px 20px;
+  padding: 3px;
+  border-radius: 1px;
+}
+
+
+.map
+{
+  padding: 10px;
+  margin: 20px;
+}
+
+iframe{
+  width: 100%;
+}
+
