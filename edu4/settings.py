@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-fap=1uw)q&4)tgk-==0e1m4hvhw&o_26esdhpe9d)ji)5c8e3$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['https://edu4-se.herokuapp.com/']
+ALLOWED_HOSTS = ['edu4test.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
