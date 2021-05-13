@@ -7,6 +7,7 @@ from django.contrib.auth import authenticate, login, logout
 
 # Create your views here.
 
+
 def registerpage(request):
     if request.user.is_authenticated:
         return redirect('home')
@@ -16,9 +17,9 @@ def registerpage(request):
             form = RegisterForm(request.POST)
             if form.is_valid():
                 form.save()
-                return redirect('login')
+                return redirect('login1')
     context = {'form':form}
-    return render(request, 'register.html', context)
+    return render(request, 'registration/register.html', context)
 
 def loginpage(request):
     if request.user.is_authenticated:
@@ -32,9 +33,9 @@ def loginpage(request):
             if user is not None:
                 login(request, user)
                 context = {'user':user}
-                return render(request, 'home.html', context)
+                return render(request, 'index.html', context)
     context = {}
-    return render(request, 'login.html', context)
+    return render(request, 'registration/login.html', context)
 
 
 def logoutUser(request):

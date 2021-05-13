@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edu4</title>
-    <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="{% static 'css/education.css' %}" />
   </head>
   <body>
     <!DOCTYPE html>
@@ -24,11 +25,10 @@
           </div>
           <!-- Left-aligned links (default) -->
           <a href="#news">News</a>
-          <a href="donate.html">Donate</a>
           <!-- Right-aligned links -->
           <div class="topnav-right">
             
-            <a href="index.html">Home</a>
+            <a href="{% url 'home' %}">Home</a>
           </div>
         </div>
         <div>
@@ -36,7 +36,7 @@
         </div>
         <!--Main section starts here-->
         <div class="m-t:8">
-          <div class="checkbox d:i-b"><a href="engineering.html" target="_blank" style="text-decoration: none; color: black;">
+          <div class="checkbox d:i-b"><a href="{% url 'engineering' %}" target="_blank" style="text-decoration: none; color: black;">
             <label 
             for="Engineering"
               class="tag-topic d:b cur:p m-r:.8 m-b:.8 m-r:1@md m-b:1@md p-x:1 p-t:.6 p-b:.7 p-x:2@md p-t:.7@md p-b:.8@md b-r:9 f-w:500 f:.9 f:1@md css-1i14b13 e1e0izx30"
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div style="opacity: 1; transform: scale(1)">
-          <div class="checkbox d:i-b"><a href="medical.html" target="_blank" style="text-decoration: none; color: black;">
+          <div class="checkbox d:i-b"><a href="{% url 'medical' %}" target="_blank" style="text-decoration: none; color: black;">
             <label
               for="medical"
               class="tag-topic d:b cur:p m-r:.8 m-b:.8 m-r:1@md m-b:1@md p-x:1 p-t:.6 p-b:.7 p-x:2@md p-t:.7@md p-b:.8@md b-r:9 f-w:500 f:.9 f:1@md css-1i14b13 e1e0izx30"
@@ -54,7 +54,7 @@
           </div>
         </div>
         <div style="opacity: 1; transform: scale(1)">
-          <div class="checkbox d:i-b"> <a href="humanities.html" target="_blank" style="text-decoration: none; color: black;">
+          <div class="checkbox d:i-b"> <a href="{% url 'humanities' %}" target="_blank" style="text-decoration: none; color: black;">
             <label
               for="Humanities"
               class="tag-topic d:b cur:p m-r:.8 m-b:.8 m-r:1@md m-b:1@md p-x:1 p-t:.6 p-b:.7 p-x:2@md p-t:.7@md p-b:.8@md b-r:9 f-w:500 f:.9 f:1@md css-1i14b13 e1e0izx30"
@@ -63,7 +63,7 @@
           </div>
         </div>
         <div style="opacity: 1; transform: scale(1)">
-          <div class="checkbox d:i-b"> <a href="management.html" target="_blank" style="text-decoration: none; color: black;">
+          <div class="checkbox d:i-b"> <a href="{% url 'mang' %}" target="_blank" style="text-decoration: none; color: black;">
             <label
               for="Business and Management"
               class="tag-topic d:b cur:p m-r:.8 m-b:.8 m-r:1@md m-b:1@md p-x:1 p-t:.6 p-b:.7 p-x:2@md p-t:.7@md p-b:.8@md b-r:9 f-w:500 f:.9 f:1@md css-1i14b13 e1e0izx30"

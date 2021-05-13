@@ -1,0 +1,25 @@
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu4</title>
+    <link rel="stylesheet" href="{% static 'css/donate.css' %}">
+</head>
+<body>
+
+
+<div class="container">
+    <h2 style="color:green">Successfully Applied :)</h2>
+
+    <p><b>Glad you applied. You will get an email from the scholarship organization about further information after your SOP has been verified. </b></p>
+
+    <hr><a href="{% url 'home' %}"><input type="submit" value="Go back to Home"></a>
+  </div>
+
+
+</body>
+</html>

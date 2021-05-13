@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <title>Edu4</title>
-    <link rel="stylesheet" href="css/jobs.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="{% static 'css/jobs.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
   </head>
   <body>
     <!--Navbar starts here-->
@@ -20,7 +21,7 @@
       <!-- Right-aligned links -->
       <div class="topnav-right">
         
-        <a href="index.html">Home</a>
+        <a href="{% url 'home' %}">Home</a>
       </div>
     </div>
     <div>
@@ -42,7 +43,7 @@
              
             </p>
             <p><strong>Salary: </strong>30,000</p>
-            <a href="application_for_job.html" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
+            <a href="{% url 'appln_info'%}" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
           </div>
         </div>
 
@@ -57,7 +58,7 @@
               
             </p>
             <p><strong>Salary:</strong> 40,000</p>
-            <a href="application_for_job.html" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
+            <a href="{% url 'appln_info' %}" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
           </div>
         </div>
 
@@ -71,7 +72,7 @@
               
             </p>
             <p><strong>Salary:</strong> 20,000</p>
-            <a href="application_for_job.html" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
+            <a href="{% url 'appln_info'%}" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
           </div>
         </div>
       </div>
@@ -87,7 +88,7 @@
               
             </p>
             <p><strong>Salary:</strong> 70,000</p>
-            <a href="application_for_job.html" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
+            <a href="{% url 'appln_info'%}" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
           </div>
         </div>
 
@@ -102,7 +103,7 @@
              
             </p>
             <p><strong>Salary:</strong> 80,000</p>
-            <a href="application_for_job.html" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
+            <a href="{% url 'appln_info'%}" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
           </div>
         </div>
 
@@ -116,7 +117,7 @@
               
             </p>
             <p><strong>Salary:</strong> 1,00,000</p>
-            <a href="application_for_job.html" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
+            <a href="{% url 'appln_info'%}" style="text-decoration:none; color:black"><button class="button button2">Apply</button></a>
           </div>
         </div>
       </div>
@@ -215,31 +216,31 @@
         <div class="footer-icons">
           <a href="#"
             ><img
-              src="images/008-facebook.png"
+              src="{% static 'images/008-facebook.png' %}"
               style="width: 40px"
               class="fa fa-facebook"
           /></a>
           <a href="#"
             ><img
-              src="images/001-twitter.png"
+              src="{% static 'images/001-twitter.png' %}"
               style="width: 40px"
               class="fa fa-twitter"
           /></a>
           <a href="#"
             ><img
-              src="images/011-instagram.png"
+              src="{% static 'images/011-instagram.png' %}"
               style="width: 40px"
               class="fa fa-instagram"
           /></a>
           <a href="#"
             ><img
-              src="images/010-linkedin.png"
+              src="{% static 'images/010-linkedin.png' %}"
               style="width: 40px"
               class="fa fa-linkedin"
           /></a>
           <a href="#"
             ><img
-              src="images/007-youtube.png"
+              src="{% static 'images/007-youtube.png' %}"
               style="width: 40px"
               class="fa fa-youtube"
           /></a>

@@ -1,28 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <title>Medical</title>
-    <link rel="stylesheet" href="css/engineering.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="{% static 'css/engineering.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   </head>
   <body>
     <!--Navbar starts here-->
     <div class="topnav">
-      <h1 class="orgName">Global Giving</h1>
+      <h1 class="orgName">Edu4</h1>
       <!-- Centered link -->
       <div class="topnav-centered">
         <a href="#medical">Medical</a>
       </div>
       <!-- Left-aligned links (default) -->
       <a href="#courses">Courses</a>
-      <a href="donate.html">Donate</a>
       <!-- Right-aligned links -->
       <div class="topnav-right">
        
-        <a href="education.html">Education</a>
-        <a href="home.html">Home</a>
+        <a href="{% url 'ctgs' %}">Education</a>
+        <a href="{% url 'home' %}">Home</a>
       </div>
     </div>
     <div>
@@ -35,7 +35,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PL0VHgizZl1gW0jgMrfy-QuxM85OPkx3k-"><img src="images/biochem.jpg" style="width:100%;height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PL0VHgizZl1gW0jgMrfy-QuxM85OPkx3k-"><img src="{% static 'images/biochem.jpg' %}" style="width:100%;height: 220px;"></a>
             <h1>
              Biochemistry 
             </h1>
@@ -46,7 +46,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLf15MyoIX0aM1aQgr-d0-fMGBDoE-r-nF"> <img src="images/physio.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://www.youtube.com/playlist?list=PLf15MyoIX0aM1aQgr-d0-fMGBDoE-r-nF"> <img src="{% static 'images/physio.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>Physiology</h1>
             <p>
               It describes the chemistry and physics behind basic body functions, from how molecules behave in cells to how systems of organs work together.
@@ -57,7 +57,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLekhl8ZQS2PbLtpx03GUbTH5CKqPZA2r_">  <img src="images/anatomy.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://www.youtube.com/playlist?list=PLekhl8ZQS2PbLtpx03GUbTH5CKqPZA2r_">  <img src="{% static 'images/anatomy.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>Anatomy</h1>
             <p>Anatomy is the identification and description of the structures of living things. It is a branch of biology and medicine.
               An understanding of anatomy is key to the practice of medicine and other areas of health.</p>
@@ -68,7 +68,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLVnjTkEwv-uNBqGkNdbR2AdfB8PBKdCAE">  <img src="images/pediat.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://www.youtube.com/playlist?list=PLVnjTkEwv-uNBqGkNdbR2AdfB8PBKdCAE">  <img src="{% static 'images/pediat.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>Pediatrics</h1>
             
             <p>Pediatrics is the branch of medicine that involves the medical care of infants, children, and adolescents.  
@@ -79,7 +79,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLyiL_uZnIp1xAGF-jYuPwEJDUIVDIv6wX"><img src="images/nephro.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLyiL_uZnIp1xAGF-jYuPwEJDUIVDIv6wX"><img src="{% static 'images/nephro.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>Nephrology</h1>
             <p>
               Nephrology is a specialty of medicine and pediatric medicine that concerns with study of the kidneys, 
@@ -90,7 +90,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLLywMQWaFPRQCxNVJJDE68fm0emfso5TI"><img src="images/medical gen.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLLywMQWaFPRQCxNVJJDE68fm0emfso5TI"><img src="{% static 'images/medical gen.jpg' %}" style="width:100%; height: 220px;"></a>
           <h1>General medicine</h1>  <p>
               General medicine is the branch of medicine that focuses on adult care. 
               It refers to the diagnosis and treatment of diseases of the internal organs.
@@ -105,7 +105,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLLywMQWaFPRRgyMUwJSaEdhMUnbtdpE5P"><img src="images/ortho.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLLywMQWaFPRRgyMUwJSaEdhMUnbtdpE5P"><img src="{% static 'images/ortho.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>Orthopedics</h1>
             </p>
             <p>Orthopaedics is the branch of surgery concerned with conditions involving the musculoskeletal system. Orthopedic surgeons use both 
@@ -116,7 +116,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLp0KsbiPOshtAZuAY02c-HyR120cvnObU"><img src="images/radio.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLp0KsbiPOshtAZuAY02c-HyR120cvnObU"><img src="{% static 'images/radio.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1> Radiobiology</h1>
             <p>
               Radiobiology is a field of clinical and basic medical sciences that involves the study of the action of ionizing radiation on living things, 
@@ -129,7 +129,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLLywMQWaFPRTX0WQa8fYwN679DnFLjdsC"><img src="images/gyn.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://www.youtube.com/playlist?list=PLLywMQWaFPRTX0WQa8fYwN679DnFLjdsC"><img src="{% static 'images/gyn.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>Gynecology</h1>
             <p>Gynecology is the medical practice dealing with the health of the female reproductive system. 
               Outside medicine, the term means "the science of women". Its counterpart is andrology, 
@@ -142,7 +142,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLVnjTkEwv-uOvGYtk-K6-Dh2m9_w6Bb_m"><img src="images/anaes.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLVnjTkEwv-uOvGYtk-K6-Dh2m9_w6Bb_m"><img src="{% static 'images/anaes.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>
               Anesthesiology 
             </h1>
@@ -154,7 +154,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLVnjTkEwv-uMKHMDLsYa7kW45dG9tnAZo"> <img src="images/emer.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLVnjTkEwv-uMKHMDLsYa7kW45dG9tnAZo"> <img src="{% static 'images/emer.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>Emergency medicine</h1>
             <p>
               Emergency medicine, also known as accident and emergency medicine, is the medical specialty concerned
@@ -167,7 +167,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLJY0wCIFC-JjIZLyfH6741RxXXxqLLANo"><img src="images/derma.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLJY0wCIFC-JjIZLyfH6741RxXXxqLLANo"><img src="{% static 'images/derma.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>Dermatology
             </h1>
             <p>Dermatology is the branch of medicine dealing with the skin. It is a speciality with both medical and surgical aspects.
@@ -219,31 +219,31 @@
         <div class="footer-icons">
           <a href="#"
             ><img
-              src="images/008-facebook.png"
+              src="{% static 'images/008-facebook.png' %}"
               style="width: 40px"
               class="fa fa-facebook"
           /></a>
           <a href="#"
             ><img
-              src="images/001-twitter.png"
+              src="{% static 'images/001-twitter.png' %}"
               style="width: 40px"
               class="fa fa-twitter"
           /></a>
           <a href="#"
             ><img
-              src="images/011-instagram.png"
+              src="{% static 'images/011-instagram.png' %}"
               style="width: 40px"
               class="fa fa-instagram"
           /></a>
           <a href="#"
             ><img
-              src="images/010-linkedin.png"
+              src="{% static 'images/010-linkedin.png' %}"
               style="width: 40px"
               class="fa fa-linkedin"
           /></a>
           <a href="#"
             ><img
-              src="images/007-youtube.png"
+              src="{% static 'images/007-youtube.png' %}"
               style="width: 40px"
               class="fa fa-youtube"
           /></a>

@@ -14,8 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from main.views import home, appl_info, success_appln
+from django.urls import path, include
+from main.views import home, appl_info, success_appln, scholarships, categories, engineering, medical, humanities, management
 from django.conf import settings
 from django.conf.urls.static import static
 from authentication.views import registerpage, loginpage, logoutUser
@@ -23,12 +23,16 @@ from authentication.views import registerpage, loginpage, logoutUser
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name = 'home'),
+    path('scholarships/', scholarships, name = 'scholarships'),
+    path('ctgs/', categories, name = 'ctgs'),
+    path('engineering/', engineering, name = 'engineering'),
+    path('medical/', medical, name = 'medical'),
+    path('humanities/', humanities, name = 'humanities'),
+    path('management', management, name = 'mang'),
     path('register/', registerpage, name = 'register'),
-    path('login/', loginpage, name = 'login'),
-    path('logout/', logoutUser, name = 'logout'),
+    path('login/', loginpage, name = 'login1'),
+    path('logout/', logoutUser, name = 'logout1'),
     path('application/', appl_info, name='appln_info'),
-    path('successfull/', success_appln, name='success_appln')
+    path('successfull/', success_appln, name='success_appln'),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

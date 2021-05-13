@@ -1,28 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Global Giving</title>
-    <link rel="stylesheet" href="css/management.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <title>Management</title>
+    <link rel="stylesheet" href="{% static 'css/management.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   </head>
   <body>
     <!--Navbar starts here-->
     <div class="topnav">
-      <h1 class="orgName">Global Giving</h1>
+      <h1 class="orgName">Edu4</h1>
       <!-- Centered link -->
       <div class="topnav-centered">
-        <a href="education.html">Business & Management</a>
+        <a href="{% url 'ctgs' %}">Business & Management</a>
       </div>
       <!-- Left-aligned links (default) -->
       <a href="#courses">Courses</a>
-      <a href="donate.html">Donate</a>
       <!-- Right-aligned links -->
       <div class="topnav-right">
        
-        <a href="education.html">Education</a>
-        <a href="home.html">Home</a>
+        <a href="{% url 'ctgs' %}">Education</a>
+        <a href="{% url 'home' %}">Home</a>
       </div>
     </div>
     
@@ -38,7 +38,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/watch?v=DWpdLNhz6cY&list=PLX6DRnWZs6BHYEFNmd0mG8XeJQ2vJg-XE   "><img src="images/business.jpg" style="width:100%; height:220px"></a>
+            <a href="https://www.youtube.com/watch?v=DWpdLNhz6cY&list=PLX6DRnWZs6BHYEFNmd0mG8XeJQ2vJg-XE   "><img src="{% static 'images/business.jpg' %}" style="width:100%; height:220px"></a>
             <h1>Online Business Funding Basics</h1>
             <p>
           E-commerce is no more an alternative to buying in-store. 
@@ -50,7 +50,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/watch?v=w-w-XakDah0&list=PLX6DRnWZs6BFTXc2S_TlswbxfN8J1BAVJ   "> <img src="images/sales.jpg" style="width:100%; height:220px"> </a>
+            <a href="https://www.youtube.com/watch?v=w-w-XakDah0&list=PLX6DRnWZs6BFTXc2S_TlswbxfN8J1BAVJ   "> <img src="{% static 'images/sales.jpg' %}" style="width:100%; height:220px"> </a>
             <h1>Business Funding Basis</h1>
             <p>
               The Path from Prospect to sale is your process. The whole reason behind having a sales process is to simply draw the line your prospect takes in order to become a customer. When it comes to financing and how it will affect your business, less is more.
@@ -60,7 +60,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/watch?v=Gg7_gFyzHrI&list=PLX6DRnWZs6BEBRPrvjEaQkUi9V0MbRwMg">  <img src="images/accounting.jpg" style="width:100%; height:220px"> </a>
+            <a href="https://www.youtube.com/watch?v=Gg7_gFyzHrI&list=PLX6DRnWZs6BEBRPrvjEaQkUi9V0MbRwMg">  <img src="{% static 'images/accounting.jpg' %}" style="width:100%; height:220px"> </a>
             <h1>Accounting Basics</h1>
             <p>
               Accounting is essential in the worlds of business, investing, finance and taxes. This explanation of accounting basics will introduce you to some basic accounting principles, accounting concepts, and accounting terminology.
@@ -72,7 +72,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/watch?v=wfOp0lsCXAY&list=PLifnQOsGyOSRMYndHku6pNlLYckbBuOGU ">  <img src="images/digimarketing.jpg" style="width:100%; height:220px"> </a>
+            <a href="https://www.youtube.com/watch?v=wfOp0lsCXAY&list=PLifnQOsGyOSRMYndHku6pNlLYckbBuOGU ">  <img src="{% static 'images/digimarketing.jpg' %}" style="width:100%; height:220px"> </a>
             <h1>Introduction to Digital Marketing</h1>
             <p>
               Digital marketing is any form of marketing products or services that involves electronic devices. That's the reason it has been around for decades (because electronics have) and why it doesn't necessarily have anything to do with content marketing, Google ads, social media or retargeting. At a high level, digital marketing refers to advertising delivered through digital channels such as search engines, websites, social media, email, and mobile apps.
@@ -82,7 +82,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://online-learning.harvard.edu/course/technology-entrepreneurship-lab-market?delta=1"><img src="images/lab_to_market.jpg" style="width:100%; height:220px"></a>
+            <a href="https://online-learning.harvard.edu/course/technology-entrepreneurship-lab-market?delta=1"><img src="{% static 'images/lab_to_market.jpg' %}" style="width:100%; height:220px"></a>
             <h1>Technology Entrepreneurship</h1>
             <p>Universities, government labs, and private companies invest billions of dollars in the research and development of breakthrough technologies that have the potential to transform industries and lives — but very few of these technologies ever leave the lab. Those that do often fail to find compelling market applications. So what determines success? How does an invention become an enduring innovation?</p>
           </div>
@@ -90,7 +90,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.classcentral.com/course/whartonaccounting-769 "><img src="images/fin_accounting.png" style="width:100%; height:220px"></a>
+            <a href="https://www.classcentral.com/course/whartonaccounting-769 "><img src="{% static 'images/fin_accounting.png' %}" style="width:100%; height:220px"></a>
             <h1>Introduction to Financial Accounting</h1>
             <p>Master the technical skills needed to analyze financial statements and disclosures for use in financial analysis, and learn how accounting standards and managerial incentives affect the financial reporting process. By the end of this course, you’ll be able to read the three most common financial statements: the income statement, balance sheet, and statement of cash flows. Then you can apply these skills to a real-world business challenge as part of the Wharton Business Foundations Specialization.</p>
           </div>
@@ -100,7 +100,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.open.edu/openlearn/money-business/understanding-your-customers/content-section-0?active-tab=description-tab "><img src="images/understanding_customers.jpg" style="width:100%; height:220px"></a>
+            <a href="https://www.open.edu/openlearn/money-business/understanding-your-customers/content-section-0?active-tab=description-tab "><img src="{% static 'images/understanding_customers.jpg' %}" style="width:100%; height:220px"></a>
             <h1>Understanding your customers</h1>
             <p>This course is a short introduction to understanding customers. 
               The course underlines the relevance of understanding customers as individuals, members of society and members of organisations. 
@@ -112,7 +112,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://programs.emeritus.org/nus-business-analytics/index.php?utm_source=Classcentral&utm_medium=Affiliate&utm_campaign=B-365D_WW_AF_CLASS-CENTRAL_NUSBA_ALWON    "><img src="images/business_analytics.jpg" style="width:100%; height:220px"></a>
+            <a href="https://programs.emeritus.org/nus-business-analytics/index.php?utm_source=Classcentral&utm_medium=Affiliate&utm_campaign=B-365D_WW_AF_CLASS-CENTRAL_NUSBA_ALWON    "><img src="{% static 'images/business_analytics.jpg' %}" style="width:100%; height:220px"></a>
             <h1>Business Analytics for Strategic Decisions</h1>
             <p>With big data technologies becoming more affordable and accessible, more companies are innovating how business is done. And as they innovate, more data piles up. The NUS Business Analytics programme can help professionals leverage their organisation’s data to gain insights and make informed decisions. By understanding these analytics, you are taking a critical first step toward developing a strategic advantage and competitive edge in the market.</p>
           </div>
@@ -120,7 +120,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.open.edu/openlearn/money-business/accounting-finance/stakeholders-marketing-and-finance/content-section-0?active-tab=description-tab "><img src="images/stakeholders.jpg" style="width:100%; height:220px"> </a>
+            <a href="https://www.open.edu/openlearn/money-business/accounting-finance/stakeholders-marketing-and-finance/content-section-0?active-tab=description-tab "><img src="{% static 'images/stakeholders.jpg' %}" style="width:100%; height:220px"> </a>
             <h1>Stakeholders in marketing and finance</h1>
             <p>This course comprises two sections introducing the idea of customers and stakeholders for financial information. It also contains two activities in which learners are asked to relate the ideas discussed to their own work practice. Making the decision to study can be a big step, which is why you'll want a trusted University. The Open University has 50 years’ experience delivering flexible learning and 170,000 students are studying with us right now. </p>
           </div>
@@ -130,7 +130,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://online-learning.harvard.edu/course/contractsx-trust-promise-contract?delta=3 "><img src="images/contract_law.jpg" style="width:100%; height:220px"></a>
+            <a href="https://online-learning.harvard.edu/course/contractsx-trust-promise-contract?delta=3 "><img src="{% static 'images/contract_law.jpg' %}" style="width:100%; height:220px"></a>
             <h1>Contract Law</h1>
             <p>Learn about contracts from Harvard Law Professor Charles Fried, one of the world’s leading authorities on contract law. Contracts are promises that the law will enforce. But when will the law refuse to honor a promise? What happens when one party does not hold to their part of the deal? This version of the course adds new units on Interpretation, Agency, Partnerships, Corporations, and Government Regulation</p>
           </div>
@@ -138,7 +138,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.open.edu/openlearn/money-business/business-strategy-studies/investment-risk/content-section-0?active-tab=description-tab "> <img src="images/investment_risk.jpg" style="width:100%; height:220px"></a>
+            <a href="https://www.open.edu/openlearn/money-business/business-strategy-studies/investment-risk/content-section-0?active-tab=description-tab "> <img src="{% static 'images/investment_risk.jpg' %}" style="width:100%; height:220px"></a>
             <h1>Investment risk</h1>
             <p>Risk, in a financial context, is a synonym for uncertainty. This free course will allow those with some background knowledge of the area to explore investment risk. You will examine how and why investors are risk-averse and look at the risk factors involved in making a decision to invest. After studying this course, you should be able to Explain the concept of risk in an investment context, comment critically on the impact of the principal risk factors in a given investment context..</p>
           </div>
@@ -146,7 +146,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://online-learning.harvard.edu/course/nonprofit-financial-stewardship-webinar-introduction-accounting-and-financial-statements?delta=0  "><img src="images/accounting_and_finstatement.jpg" style="width:100%; height:220px"></a>
+            <a href="https://online-learning.harvard.edu/course/nonprofit-financial-stewardship-webinar-introduction-accounting-and-financial-statements?delta=0  "><img src="{% static 'images/accounting_and_finstatement.jpg' %}" style="width:100%; height:220px"></a>
             <h1>Nonprofit Financial Stewardship Webinar</h1>
             <p>The Introduction to Nonprofit Accounting and Financial Statements webinar series is designed to introduce basic nonprofit accounting concepts and financial statements to individuals who have had little or no experience with finance or accounting.
 
@@ -207,31 +207,31 @@
         <div class="footer-icons">
           <a href="#"
             ><img
-              src="images/008-facebook.png"
+              src="{% static 'images/008-facebook.png' %}"
               style="width: 40px"
               class="fa fa-facebook"
           /></a>
           <a href="#"
             ><img
-              src="images/001-twitter.png"
+              src="{% static 'images/001-twitter.png' %}"
               style="width: 40px"
               class="fa fa-twitter"
           /></a>
           <a href="#"
             ><img
-              src="images/011-instagram.png"
+              src="{% static 'images/011-instagram.png' %}"
               style="width: 40px"
               class="fa fa-instagram"
           /></a>
           <a href="#"
             ><img
-              src="images/010-linkedin.png"
+              src="{% static 'images/010-linkedin.png' %}"
               style="width: 40px"
               class="fa fa-linkedin"
           /></a>
           <a href="#"
             ><img
-              src="images/007-youtube.png"
+              src="{% static 'images/007-youtube.png' %}"
               style="width: 40px"
               class="fa fa-youtube"
           /></a>

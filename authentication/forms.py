@@ -14,12 +14,6 @@ class RegisterForm(UserCreationForm):
         model = User
         fields = ['username', 'email', 'password1', 'password2']
     
-    def clean_phone(self):
-        _dict = super(CreateUserProfileForm, self).clean()
-        if not _dict['phone'].isdigit():
-            raise forms.ValidationError('Phone number invalid')
-        _dict['phone'] = _dict['phone'][-10:]
-        return _dict['phone']
     
     def clean_email(self):
         if User.objects.filter(email__iexact=self.data['email']).exists():

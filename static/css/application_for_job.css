@@ -3,7 +3,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 input[type="text"],
 select,
 textarea {
@@ -25,6 +24,7 @@ input[type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 input[type="submit"]:hover {
@@ -36,12 +36,14 @@ input[type="submit"]:hover {
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-left: 430px;
+  margin-right: 430px;
 }
 
 
 .container h1{
     color: black;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-family: sans-serif;
 }
 /* Footer starts here */
 input[type="checkbox"]

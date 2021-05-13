@@ -21,7 +21,7 @@
       <!-- Right-aligned links -->
       <div class="topnav-right">
       
-        <a href="index.html">Home</a>
+        <a href="{% url 'home' %}">Home</a>
       </div>
     </div>
     <div>
@@ -44,7 +44,7 @@
           
           <label for="Passc">Re-type Password</label>
           <input type="text" id="Passc" name="cpassword" placeholder="Your password">
-          <a href="index.html"><input type="submit" value="Submit"></a>
+          <a href="{% url 'home' %}"><input type="submit" value="Submit"></a>
       
         </form>
       </div>

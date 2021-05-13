@@ -1,28 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <title>Humanities</title>
-    <link rel="stylesheet" href="css/engineering.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="{% static 'css/engineering.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   </head>
   <body>
     <!--Navbar starts here-->
     <div class="topnav">
-      <h1 class="orgName">Global Giving</h1>
+      <h1 class="orgName">Edu4</h1>
       <!-- Centered link -->
       <div class="topnav-centered">
         <a href="#humanities">Humanities</a>
       </div>
       <!-- Left-aligned links (default) -->
       <a href="#courses">Courses</a>
-      <a href="donate.html">Donate</a>
       <!-- Right-aligned links -->
       <div class="topnav-right">
         >
-        <a href="education.html">Education</a>
-        <a href="home.html">Home</a>
+        <a href="{% url 'ctgs' %}">Education</a>
+        <a href="{% url 'home' %}">Home</a>
       </div>
     </div>
     <div>
@@ -36,7 +36,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://nptel.ac.in/courses/109/101/109101004/"><img src="images/h1.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://nptel.ac.in/courses/109/101/109101004/"><img src="{% static 'images/h1.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>
               Contemporary Issues in Philosophy of Mind and Cognition             
             </h1>
@@ -48,7 +48,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://nptel.ac.in/courses/109/103/109103019/"> <img src="images/h2.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://nptel.ac.in/courses/109/103/109103019/"> <img src="{% static 'images/h2.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>Cultural Studies</h1>
             <p>
               Cultural studies is a field of theoretically, politically, and empirically engaged cultural analysis that concentrates upon the political dynamics of contemporary culture, its historical foundations, defining traits, conflicts, and contingencies. Cultural studies researchers generally investigate how cultural practices relate to wider systems of power associated
@@ -60,7 +60,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://nptel.ac.in/courses/109/103/109103141/">  <img src="images/h3.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://nptel.ac.in/courses/109/103/109103141/">  <img src="{% static 'images/h3.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>
    An Introduction to Political Theory
             </h1>
@@ -76,7 +76,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://nptel.ac.in/courses/109/106/109106052/">  <img src="images/h4.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://nptel.ac.in/courses/109/106/109106052/">  <img src="{% static 'images/h4.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>
               Aspects of Western philosophy
             </h1>
@@ -87,7 +87,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://nptel.ac.in/courses/109/106/109106124/"><img src="images/h5.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://nptel.ac.in/courses/109/106/109106124/"><img src="{% static 'images/h5.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>History of English Language and Literature</h1>
             <p>
               English literature dates back exceeding five centuries. The literature not only 
@@ -100,7 +100,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://nptel.ac.in/courses/109/107/109107131/"><img src="images/h6.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://nptel.ac.in/courses/109/107/109107131/"><img src="{% static 'images/h6.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>
              Sociology 
             </h1>
@@ -115,7 +115,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLdrRx2zGbP4-b65GEdwjsr5B-k5m1FEbs"><img src="images/h7.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLdrRx2zGbP4-b65GEdwjsr5B-k5m1FEbs"><img src="{% static 'images/h7.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>
           World History
             </h1>
@@ -126,7 +126,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLGMKyXzHZrkktetMUhJk7_ZS4b1-HGVpH"><img src="images/h8.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://www.youtube.com/playlist?list=PLGMKyXzHZrkktetMUhJk7_ZS4b1-HGVpH"><img src="{% static 'images/h8.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>Constitutional Law</h1>
             <p>
               Constitutional law is a body of law which defines the role, powers, and structure of different entities within a state, namely, the executive, the parliament or legislature, and the judiciary; as well as the basic rights of citizens 
@@ -138,7 +138,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://www.youtube.com/playlist?list=PLp-cIkvQ88-3cuLduhTPzonbDFu2VBjn3"><img src="images/h9.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://www.youtube.com/playlist?list=PLp-cIkvQ88-3cuLduhTPzonbDFu2VBjn3"><img src="{% static 'images/h9.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>
                 Yale courses
             </h1>
@@ -193,31 +193,31 @@
         <div class="footer-icons">
           <a href="#"
             ><img
-              src="images/008-facebook.png"
+              src="{% static 'images/008-facebook.png' %}"
               style="width: 40px"
               class="fa fa-facebook"
           /></a>
           <a href="#"
             ><img
-              src="images/001-twitter.png"
+              src="{% static 'images/001-twitter.png' %}"
               style="width: 40px"
               class="fa fa-twitter"
           /></a>
           <a href="#"
             ><img
-              src="images/011-instagram.png"
+              src="{% static 'images/011-instagram.png' %}"
               style="width: 40px"
               class="fa fa-instagram"
           /></a>
           <a href="#"
             ><img
-              src="images/010-linkedin.png"
+              src="{% static 'images/010-linkedin.png' %}"
               style="width: 40px"
               class="fa fa-linkedin"
           /></a>
           <a href="#"
             ><img
-              src="images/007-youtube.png"
+              src="{% static 'images/007-youtube.png' %}"
               style="width: 40px"
               class="fa fa-youtube"
           /></a>

@@ -1,28 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Global Giving</title>
-    <link rel="stylesheet" href="css/engineering.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <title>Engineering</title>
+    <link rel="stylesheet" href="{% static 'css/engineering.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
   </head>
   <body>
     <!--Navbar starts here-->
     <div class="topnav">
-      <h1 class="orgName">Global Giving</h1>
+      <h1 class="orgName">Edu4</h1>
       <!-- Centered link -->
       <div class="topnav-centered">
         <a href="#engineering">Engineering</a>
       </div>
       <!-- Left-aligned links (default) -->
       <a href="#courses">Courses</a>
-      <a href="donate.html">Donate</a>
       <!-- Right-aligned links -->
       <div class="topnav-right">
         
-        <a href="education.html">Education</a>
-        <a href="index.html">Home</a>
+        <a href="{% url 'ctgs' %}">Education</a>
+        <a href="{% url 'home' %}">Home</a>
       </div>
     </div>
     <div>
@@ -45,7 +45,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/GIsg-ZUy0MY"><img src="images/img14.jpg" style="width:100%;height: 220px;"></a>
+            <a href="https://youtu.be/GIsg-ZUy0MY"><img src="{% static 'images/img14.jpg' %}" style="width:100%;height: 220px;"></a>
             <h1>PyTorch for Deep Learning</h1><p>
               In this course, you will learn how to build deep learning models with PyTorch and Python. 
               The course makes PyTorch a bit more approachable for people starting out with deep learning and neural networks.
@@ -56,7 +56,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/grEKMHGYyns"> <img src="images/img15.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://youtu.be/grEKMHGYyns"> <img src="{% static 'images/img15.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>Learn Java 8</h1>
             <p>
               Java 8 is a revolutionary release of the world’s #1 development platform.
@@ -68,7 +68,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/L72fhGm1tfE">  <img src="images/img16.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://youtu.be/L72fhGm1tfE">  <img src="{% static 'images/img16.jpg' %}" style="width:100%; height: 220px;"> </a>
             <h1>Express JS Crash Course</h1><p> Express.js, or simply Express, 
               is a back end web application framework for Node.js, released as free and open-source software.
               In this crash course you will dive into the Express JS framework for Node.js.</p>
@@ -80,7 +80,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/ujTCoH21GlA">  <img src="images/img17" style="width:100%; height: 220px;"> </a>
+            <a href="https://youtu.be/ujTCoH21GlA">  <img src="{% static 'images/img17' %}" style="width:100%; height: 220px;"> </a>
             <h1>Python Machine Learning</h1>
             <p>This is 2019 python machine learning tutorial introduction. 
             Go through setting up tensorflow and sklearn so that you are ready to start coding some cool machine learning projects! </p>
@@ -89,7 +89,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/AT14lCXuMKI"><img src="images/img8.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://youtu.be/AT14lCXuMKI"><img src="{% static 'images/img8.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1> Arrays in Data Structure</h1><p>An array, is a data structure consisting of a collection of elements.
               This lecture contains discussion of need of array, declaration of array, 
               initialization of array, memory representation of array 
@@ -99,7 +99,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/bum_19loj9A"><img src="images/img10.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://youtu.be/bum_19loj9A"><img src="{% static 'images/img10.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1> Data Structures & Algorithms </h1><p> Data Structure is a way of collecting and organising data in an effective way. 
               It is about storing data elements.
           </p>
@@ -110,7 +110,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/6mbwJ2xhgzM"><img src="images/img7.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://youtu.be/6mbwJ2xhgzM"><img src="{% static 'images/img7.jpg' %}" style="width:100%; height: 220px;"></a>
           <h1>Web Development</h1>  <p>
             Web development is the work involved in developing a web site for the Internet or an intranet. 
             It can range from developing a simple single static page of plain text to complex web-based internet applications, electronic businesses, and social network services.
@@ -120,7 +120,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/_uQrJ0TkZlc"><img src="images/img6.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://youtu.be/_uQrJ0TkZlc"><img src="{% static 'images/img6.jpg' %}" style="width:100%; height: 220px;"></a>
             <h1>Python for Beginners </h1><p>Learn Python programming for a career in machine learning, data science & web development.
               Python is a high-level and general-purpose programming language. 
               Its language constructs and object-oriented approach aim to help programmers write clear, logical code. 
@@ -130,7 +130,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/LHBE6Q9XlzI"><img src="images/img9.jpg" style="width:100%; height: 220px;"> </a>
+            <a href="https://youtu.be/LHBE6Q9XlzI"><img src="{% static 'images/img9.jpg' %}" style="width:100%; height: 220px;"> </a>
            <h1>Python for Data Science</h1> <p>Python is a high-level and general-purpose programming language. This Python data science course will take you from
               knowing nothing about Python to coding and analyzing data with Python using tools like Pandas, NumPy, and Matplotlib.
           </p>
@@ -141,7 +141,7 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/fqMOX6JJhGo"><img src="images/img11.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://youtu.be/fqMOX6JJhGo"><img src="{% static 'images/img11.jpg' %}" style="width:100%; height: 220px;"></a>
           <h1>Docker</h1>  <p>
               In this course you will learn Docker through a series of lectures that use animation, illustration and some fun analogies that simply complex concepts, 
               It has demos that will show you how to install and get started with Docker and most importantly you will have hands-on labs that you can access right in your browser. 
@@ -151,7 +151,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/3Xc3CA655Y4"> <img src="images/img12.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://youtu.be/3Xc3CA655Y4"> <img src="{% static 'images/img12.jpg' %}" style="width:100%; height: 220px;"></a>
          <h1>Matplotlib Crash Course</h1>   <p>Learn the basics of Matplotlib in this crash course tutorial. Matplotlib is an amazing data visualization library for Python. You will also learn how to apply Matplotlib to real-world problems. 
           It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. 
             </p>
@@ -160,7 +160,7 @@
 
         <div class="column">
           <div class="card">
-            <a href="https://youtu.be/HXV3zeQKqGY"><img src="images/img13.jpg" style="width:100%; height: 220px;"></a>
+            <a href="https://youtu.be/HXV3zeQKqGY"><img src="{% static 'images/img13.jpg' %}" style="width:100%; height: 220px;"></a>
            <h1>SQL course</h1> <p>
               In this course, you'll be looking at database management basics and SQL using the MySQL RDBMS. 
               The course is designed for beginners to SQL and database management systems.Throughout the course you'll be looking at various topics including schema design, 
@@ -221,31 +221,31 @@
         <div class="footer-icons">
           <a href="#"
             ><img
-              src="images/008-facebook.png"
+              src="{% static 'images/008-facebook.png' %}"
               style="width: 40px"
               class="fa fa-facebook"
           /></a>
           <a href="#"
             ><img
-              src="images/001-twitter.png"
+              src="{% static 'images/001-twitter.png' %}"
               style="width: 40px"
               class="fa fa-twitter"
           /></a>
           <a href="#"
             ><img
-              src="images/011-instagram.png"
+              src="{% static 'images/011-instagram.png' %}"
               style="width: 40px"
               class="fa fa-instagram"
           /></a>
           <a href="#"
             ><img
-              src="images/010-linkedin.png"
+              src="{% static 'images/010-linkedin.png' %}"
               style="width: 40px"
               class="fa fa-linkedin"
           /></a>
           <a href="#"
             ><img
-              src="images/007-youtube.png"
+              src="{% static 'images/007-youtube.png' %}"
               style="width: 40px"
               class="fa fa-youtube"
           /></a>

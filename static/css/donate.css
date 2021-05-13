@@ -1,0 +1,79 @@
+.donate {
+  color: black;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgb(97, 76, 175);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4645a0;
+}
+
+.container {
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 50px;
+  margin-left: 430px;
+  margin-right: 430px;
+  background-color: rgb(255, 255, 255);
+}
+
+#space {
+  padding: 10px;
+}
+/* Footer starts here
